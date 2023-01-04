@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a18b3ea7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="clock-container">
+      <p id="clockHour">00</p>
+      <span>:</span>
+      <p id="clockMin">00</p>
+      <span>:</span>
+      <p id="clockSec">00</p>
+      <p id="season">PM</p>
+    </div>
+    <div class="container">
+    <div class="head">
+        <h2>Time <span class="auto-type"></span></h2>
+    </div>
+    <div class="group-el">
+       <div class="button-el">
+        <i class="fa fa-play-circle" id="play"></i>
+        <i class="fa fa-stop-circle" id="pause"></i>
+        <i class="fa fa-repeat" id="restart"></i>
+       </div>
+       <div class="timer-el">
+        <div>
+          <p id="min">00</p>
+          <p class="para-el">MINUTE</p>
+        </div>
+        <div>
+            <p id="sec">00</p>
+          <p class="para-el">SECONDS</p>
+        </div>
+        <div>
+            <p id="count">00</p>
+          <p class="para-el">COUNTS</p>
+        </div>
+       </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+         // jSTYPE EFFECT 
+    var typed = new Typed('.auto-type', {
+        strings: ["waits for no one", "couldn't be back", "is Money"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    })
+    </script>
+</body>
+</html>
